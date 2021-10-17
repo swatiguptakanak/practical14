@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Page</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        body{
+            background-color: gray;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 200px;
+            color: rgb(33, 67, 78);
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+        p{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+        .btncontainer{
+            height: auto;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button:hover {
+        cursor: pointer;
+        border: none;
+        color: lightskyblue;
+        background-color:yellow;
+      }
+      button {
+        font-size: 20px;
+        width: 50px;
+        height: 40px;
+        margin-right: 30px;
+        margin-left: 20px;
+        font-size: 30px bold;
+      }
+      #value {
+        font-size: 30px;
+        color:yellow;
+        margin: 0px 20px;
+      }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Counter</p>
+        <div class="btncontainer">
+            <button id ="dec">-</button>
+            <span id="value">0</span>
+            <button id = "inc">+</button>
+        </div>
+    </div>
+    <script src="./counter.js"></script>
+    
+</body>
+</html>
